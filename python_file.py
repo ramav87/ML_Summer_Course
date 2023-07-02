@@ -14,7 +14,8 @@ plt.figure()
 plt.plot(xvec,y,'ro')
 
 #Fit the data
-p = np.polyfit(xvec,y,2)
+#Let's use a 3rd degree polynomial this time.
+p = np.polyfit(xvec,y,3)
 fit_values = np.polyval(p,xvec)
 plt.plot(xvec,fit_values, 'b--')
 plt.legend(loc='best')
