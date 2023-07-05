@@ -14,6 +14,8 @@ plt.figure()
 plt.plot(xvec,y,'ro')
 
 #Fit the data
+#instead of fitting the data to 2nd order polynomial, 
+#Use a 3rd order polynomial.
 p = np.polyfit(xvec,y,2)
 fit_values = np.polyval(p,xvec)
 plt.plot(xvec,fit_values, 'b--')
